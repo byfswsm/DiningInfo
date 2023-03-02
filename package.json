@@ -1,0 +1,43 @@
+{
+  "name": "vite-template-react",
+  "version": "1.2.0",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite --host",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "vitest --ui",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "cy:open": "cypress open --e2e",
+    "em:start": "firebase emulators:start --import=./saved-data --export-on-exit",
+    "em:exec": "firebase emulators:exec --import=./saved-data 'npm start'",
+    "em:execui": "firebase emulators:exec --ui --import=./saved-data 'npm start'"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.4",
+    "firebase": "^9.15.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.3.0",
+    "@vitejs/plugin-react": "^3.0.0",
+    "@vitest/coverage-c8": "^0.25.8",
+    "@vitest/ui": "^0.25.8",
+    "c8": "^7.12.0",
+    "cypress": "^12.5.0",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "jsdom": "^20.0.3",
+    "prettier": "^2.8.2",
+    "vite": "^4.0.0"
+  }
+}

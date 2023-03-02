@@ -1,0 +1,28 @@
+
+
+body {
+  background-color: rgb(233, 232, 231);
+  padding: 2%;
+  width:100%;
+  padding-top: 90px;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  block-size: fit-content;
+  overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+section {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  block-size: fit-content;
+  
+}
+
+section * {
+  display: flex;
+}
+
